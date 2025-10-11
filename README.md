@@ -1,0 +1,1 @@
+this is suscom academy website using html css and javacript. it's a fully functional website where we provide internships programe and course to the students who are willing to seek knowledge from that programe.
