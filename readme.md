@@ -22,6 +22,15 @@ i'm thinking abour making to do list for the today's task ✅
  # Today date is 13/10/25
  so today i am going to work on the services section for the web page, where we can see the services that we are offering in suscom academy 
 
- 1.develope the service section 
- 2.moadification on the service section with 
- 3.adding team section with imgages and roles in the company
+ 1.develope the service section ✅
+ 2.moadification on the service section with ✅
+ 3.adding team section with imgages and roles in the company ✅
+
+ # Today date is 14/10/25
+ so today i am working on the sections, means every section of that main website page. where i try to enhance the gui stuf like the transition from one section to second section 
+
+ 1.Divide section ✅
+ 2.creative about section ✅
+ 3.service section ✅
+ 4.Team section ✅
+ 5.All the changes push to the github ✅
