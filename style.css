@@ -138,11 +138,11 @@ body::before {
     color: inherit;
 }
 
-/* New: Logo Image Placeholder */
 .brand-logo-img {
-    height: 44px; /* Set a standard height */
-    width: auto; /* Maintain aspect ratio */
+    height: 44px;
+    width: 44px;
     border-radius: var(--radius);
+    object-fit: cover;
 }
 
 .brand-logo-container {
@@ -153,7 +153,7 @@ body::before {
      display: flex;
      align-items: center;
      justify-content: center;
-     overflow: hidden; /* Contains the image */
+     overflow: hidden;
 }
 
 .brand-text {
@@ -247,7 +247,7 @@ body::before {
 
 /* Watermark text */
 .hero::before {
-    content: 'ACADEMY'; /* Changed content */
+    content: 'ACADEMY';
     position: absolute;
     top: 15%;
     left: 50%;
@@ -286,12 +286,12 @@ body::before {
 }
 
 .highlight {
-    background-color: var(--accent-green);
+    /* background: var(--accent-green); */
     color: var(--bg-dark);
     padding: 0 12px;
     border-radius: var(--radius);
     display: inline-block;
-    background: transparent;
+    color: var(--bg-dark);
 }
 
 .subtitle {
@@ -303,7 +303,8 @@ body::before {
 }
 
 .hero-badge img {
-    width: 150px;
+    height: 50px;
+    width: auto;
     margin-bottom: 32px;
 }
 
@@ -318,6 +319,7 @@ body::before {
     transition: all .3s var(--ease);
     font-size: 0.95rem;
     text-transform: uppercase;
+    border: none;
 }
 
 .btn.primary {
@@ -365,7 +367,7 @@ body::before {
 
 .about-media img {
     width: 100%;
-    height: 280px;
+    height: auto;
     object-fit: cover;
     border-radius: var(--radius);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -399,7 +401,7 @@ body::before {
 .btn.outline:hover {
     background: var(--accent-pink);
     color: white;
-    box-shadow: 0 10px 30px rgba(255, 64, 129, 0.4);
+    box-shadow: 0 10px 30px rgba(153, 15, 141, 0.4);
 }
 
 /* ============================
@@ -422,6 +424,9 @@ body::before {
     margin-bottom: 60px;
     opacity: 0.8;
     font-size: 1.1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .program-grid {
@@ -546,7 +551,7 @@ body::before {
 }
 
 /* ============================
-   Footer (Improved Structure)
+   Footer
    ============================ */
 #footer {
     background: linear-gradient(135deg, #0a0f1c 0%, #1a1f35 100%);
@@ -596,13 +601,11 @@ body::before {
     font-size: 0.85rem;
 }
 
-/* Contact/Info Styling */
 .footer-info p {
     margin-bottom: 8px;
     color: var(--text-secondary);
     font-size: 0.95rem;
 }
-
 
 /* ============================
    Scroll to Top
@@ -641,7 +644,6 @@ body::before {
     box-shadow: 0 15px 40px rgba(255, 64, 129, 0.4);
 }
 
-
 /* ============================
    Reveal Animations
    ============================ */
@@ -672,100 +674,48 @@ body::before {
 }
 
 /* ============================
-   Responsive
-   ============================ */
-@media (max-width: 980px) {
-    .about {
-        padding: 40px;
-    }
-
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .about-media {
-        order: 2;
-    }
-
-    .about-text {
-        order: 1;
-    }
-
-    .nav-links,
-    .cta-nav-wrapper {
-        display: none;
-    }
-
-    .nav-links.open {
-        display: flex;
-        position: fixed;
-        right: 0;
-        top: 80px;
-        width: 80%;
-        max-width: 320px;
-        height: 100vh;
-        background: var(--bg-dark-light);
-        flex-direction: column;
-        padding: 28px;
-        gap: 18px;
-        align-items: flex-start;
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
-
-@media (max-width: 600px) {
-    .title {
-        font-size: 2.5rem;
-    }
-
-    .hero::before {
-        font-size: 6rem;
-    }
-
-    .subtitle {
-        font-size: 1rem;
-    }
-
-    .about {
-        padding: 30px 20px;
-    }
-
-    .program-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .btn.ghost {
-        margin-left: 0;
-        margin-top: 15px;
-    }
-}
-
-
-/* ============================
-   Courses Section (IMPROVED)
+   Courses Section
    ============================ */
 .courses-section-wrapper .section-title {
     margin-bottom: 12px;
 }
 
 .courses-section-wrapper .section-sub {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
-
-@keyframes auto-scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
+/* NEW: Filter Button Styles */
+.course-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
+.filter-btn {
+    background-color: transparent;
+    color: var(--text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 20px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s var(--ease);
+}
+
+.filter-btn:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+}
+
+.filter-btn.active {
+    background-color: var(--accent-green);
+    color: var(--bg-dark);
+    border-color: var(--accent-green);
+    box-shadow: 0 5px 15px rgba(33, 197, 93, 0.2);
+}
 
 .carousel-wrapper {
     position: relative;
@@ -785,6 +735,14 @@ body::before {
     animation-play-state: paused;
 }
 
+@keyframes auto-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-296px * 7)); /* (card-width + gap) * num_cards */
+    }
+}
 
 .course-card {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
@@ -795,7 +753,7 @@ body::before {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.3s var(--ease);
+    transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.3s var(--ease), opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .course-card:hover {
@@ -880,7 +838,162 @@ body::before {
     color: var(--bg-dark);
 }
 
-.carousel-arrow {
+/* ============================
+   Contact Section
+   ============================ */
+.contact-form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 40px;
+    backdrop-filter: blur(5px);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
+    width: 100%;
+    background-color: var(--bg-dark);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-primary);
+    padding: 14px;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color .3s ease, box-shadow .3s ease;
+}
+
+.contact-form-wrapper input:focus,
+.contact-form-wrapper textarea:focus {
+    outline: none;
+    border-color: var(--accent-green);
+    box-shadow: 0 0 10px rgba(33, 197, 93, 0.4);
+}
+
+.contact-form-wrapper input::placeholder,
+.contact-form-wrapper textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-status {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: var(--radius);
+    text-align: center;
+    font-weight: 600;
     display: none;
+}
+
+.form-status.success {
+    background-color: rgba(33, 197, 93, 0.2);
+    color: var(--accent-green);
+    display: block;
+}
+
+.form-status.error {
+    background-color: rgba(255, 64, 129, 0.2);
+    color: var(--accent-pink);
+    display: block;
+}
+
+/* ============================
+   Responsive
+   ============================ */
+@media (max-width: 980px) {
+    .about {
+        padding: 40px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-media {
+        order: 2;
+    }
+
+    .about-text {
+        order: 1;
+    }
+
+    .nav-links,
+    .cta-nav-wrapper {
+        display: none;
+    }
+
+    .nav-links.open {
+        display: flex;
+        position: fixed;
+        right: 0;
+        top: 80px;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        background: var(--bg-dark-light);
+        flex-direction: column;
+        padding: 28px;
+        gap: 18px;
+        align-items: flex-start;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .hero::before {
+        font-size: 6rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .about {
+        padding: 30px 20px;
+    }
+
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-ctas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn.ghost {
+        margin-left: 0;
+        margin-top: 15px;
+    }
 }
 

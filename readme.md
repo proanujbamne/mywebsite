@@ -41,3 +41,10 @@ i'm thinking abour making to do list for the today's task ✅
  Today i have developed a course section with animation 
  1.course section✅ 
  2.add a mission and vision section ✅
+
+# Today date is 16/1025
+Today i have worked on the contact form and the course section 
+ 1.contact form done✅
+ 2.add a filter to the course section ✅
+ 3.Map location integrated to the footer section✅
+ 4.all the changes commited to the github✅

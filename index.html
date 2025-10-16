@@ -7,20 +7,17 @@
     <title>Suscom Group Academy - Courses and Internships</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>S</text></svg>">
     <link rel="stylesheet" href="style.css" />
-    <script src="scripts.js"></script>
 </head>
 
 <body>
     <div class="animated-background"></div>
-    <!-- Animated background -->
-
     <header id="site-header">
         <nav class="navbar container">
             <a href="#home" class="brand">
                 <div class="brand-logo-container">
                     <img src="/imgaes/logo.png" alt="Suscom Group Logo" class="brand-logo-img">
                 </div>
-                <span class="brand-text">Suscom Group</span>
+                <span class="brand-text">Suscom Academy</span>
             </a>
 
             <ul class="nav-links" id="nav-links">
@@ -28,7 +25,7 @@
                 <li><a href="#services" class="nav-link">Programs</a></li>
                 <li><a href="#courses" class="nav-link">Trending</a></li>
                 <li><a href="#about" class="nav-link">About Us</a></li>
-                <li><a href="#team" class="nav-link">Team</a></li>
+                <!-- <li><a href="#team" class="nav-link">Team</a></li> -->
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
 
@@ -45,19 +42,17 @@
     </header>
 
     <main>
-        <!--Hero section-->
         <section id="home" class="hero section">
             <div class="hero-inner container">
                 <div class="hero-content reveal">
                     <h1 class="title">
-                        Think.<span class="highlight">Build </span>
-                        .Deploy
+                        Think.<span class="highlight">Build</span>.Deploy
                     </h1>
                     <p class="subtitle">
                         Our expert-led courses and guaranteed internship programs prepare you for real-world tech careers with project-based learning.
                     </p>
                     <div class="hero-badge">
-                        <img src="" alt="Top Leader Badge" />
+                        <img src="/imgaes/6.jpeg" alt="Top Leader Badge" />
                     </div>
                     <div class="hero-ctas">
                         <a class="btn ghost" href="#services">Explore Programs &rarr;</a>
@@ -65,7 +60,7 @@
                 </div>
             </div>
         </section>
-        <!--Services section-->
+
         <section id="services" class="section">
             <div class="container" style="min-height: 40vh;">
                 <h2 class="section-title reveal">Courses & Internships</h2>
@@ -94,90 +89,115 @@
                 </div>
             </div>
         </section>
+        
+        <section id="courses" class="courses-section-wrapper section">
+            <h2 class="section-title reveal">Trending Courses</h2>
+            <p class="section-sub reveal">Explore our most popular programs, loved by thousands of learners.</p>
+            
+            <div class="course-filters reveal">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="webdev">Web Dev</button>
+                <button class="filter-btn" data-category="python">Python</button>
+                <button class="filter-btn" data-category="cloud">Cloud</button>
+                <button class="filter-btn" data-category="ai">AI/ML</button>
+            </div>
 
+            <div class="carousel-wrapper">
+                <div id="courses-grid" class="courses-grid"></div>
+            </div>
+        </section>
+        <section id="team" class="team section">
+            <div class="container">
+                <h2 class="section-title reveal">Our Team </h2>
+                <p class="section-sub reveal">Meet the industry experts who will guide your learning journey.</p>
+
+                <div class="team-container">
+                    <div class="team-member reveal-card">
+                        <img src="imgaes/narendra sir.jpeg" alt="Narendra Sir" />
+                        <h3>Narendra Sir</h3>
+                        <p class="role">Tech Lead</p>
+                        <p class="bio">
+                            With over a decade of experience in enterprise software, Narendra leads our Cloud & DevOps curriculum.
+                        </p>
+                    </div>
+                    
+                    <div class="team-member reveal-card">
+                        <img src="/imgaes/ajay sir.jpeg" alt="Ajay Sir" />
+                        <h3>Ajay Sir</h3>
+                        <p class="role">Full-Stack Developer</p>
+                        <p class="bio">
+                           Ajay is a MERN stack expert who is passionate about building scalable web applications and mentoring new developers.
+                        </p>
+                    </div>
+
+                    <div class="team-member reveal-card">
+                        <img src="/imgaes/mithun.jpeg" alt="Mithun" />
+                        <h3>Mithun</h3>
+                        <p class="role">Frontend Expert</p>
+                        <p class="bio">
+                            Mithun specializes in creating beautiful and responsive user interfaces with modern frameworks like React and Vue.
+                        </p>
+                    </div>
+                    <div class="team-member reveal-card">
+                        <img src="/imgaes/anujj.jpeg" alt="Anuj" />
+                        <h3>Anuj</h3>
+                        <p class="role">Backend Developer</p>
+                        <p class="bio">
+                            Anuj architects robust server-side logic and database systems, ensuring performance and security.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section id="about" class="about section">
             <div class="container about-grid">
                 <div class="about-media reveal-left">
-                    <img src="/imgaes/6.jpeg" alt="Students learning together" />
+                    <img src="/imgaes/studenLearngin.jpg" alt="Students learning together" />
                 </div>
                 <div class="about-text reveal-right">
                     <h2>About Suscom Group Academy</h2>
                     <p>
-                        Suscom Group Academy provides job-focused training designed to bridge the gap between academic knowledge and industry demands. We focus on **hands-on projects** and building professional portfolios.
+                        Suscom Group Academy provides job-focused training designed to bridge the gap between academic knowledge and industry demands. We focus on <strong>hands-on projects</strong> and building professional portfolios.
                     </p>
                     <p>
-                        Our core strength lies in securing **guaranteed internships** for successful graduates, giving them the essential experience needed to launch their high-tech careers.
+                        Our core strength lies in securing <strong>guaranteed internships</strong> for successful graduates, giving them the essential experience needed to launch their high-tech careers.
                     </p>
                     <a class="btn outline" href="#contact">Get Syllabus</a>
                 </div>
             </div>
         </section>
-        
-        <!-- Courses Section -->
-        <section id="courses" class="courses-section-wrapper section">
-            <h2 class="section-title reveal">Trending Courses</h2>
-            <p class="section-sub reveal">Explore our most popular programs, loved by thousands of learners.</p>
-            <div class="carousel-wrapper">
-                <!-- Course cards will be injected here by JavaScript -->
-                <div id="courses-grid" class="courses-grid"></div>
-            </div>
-        </section>
-    
-        <!--Team sections-->
-        <section id="team" class="team section">
+
+        <section id="contact" class="section">
             <div class="container">
-                <h2 class="section-title reveal">Team Members</h2>
-                <p class="section-sub reveal">Hearing from our graduates who successfully landed roles after their internships.</p>
-
-                <div class="team-container">
-                    <div class="team-member reveal-card">
-                        <img src="/imgaes/narendra sir.jpeg" alt="Student testimonial 1" />
-                        <h3>Narendra Sir</h3>
-                        <p class="role">Tech Lead</p>
-                        <p class="bio">
-                            "The Cloud Course led directly to my internship. The practical focus was exactly what hiring managers were looking for."
-                        </p>
-                    </div>
-
-                    <div class="team-member reveal-card">
-                        <img src="/imgaes/ajay sir.jpeg" alt="Student testimonial 2" />
-                        <h3>Ajay Sir</h3>
-                        <p class="role">Full-Stack Developer</p>
-                        <p class="bio">
-                            "Built my entire portfolio here! The mentorship during the internship was invaluable. Now working as a Junior Developer."
-                        </p>
-                    </div>
-
-                    <div class="team-member reveal-card">
-                        <img src="/imgaes/mithun.jpeg" alt="Student testimonial 3" />
-                        <h3>Mithun</h3>
-                        <p class="role">Frontend Experts</p>
-                        <p class="bio">
-                            "Transformed my career from non-tech to Data Analyst in 6 months. Highly recommend the Data Science Bootcamp."
-                        </p>
-                    </div>
-                    <div class="team-member reveal-card">
-                        <img src="/imgaes/anujj.jpeg" alt="Student testimonial 3" />
-                        <h3>Anuj </h3>
-                        <p class="role">Backend Developer </p>
-                        <p class="bio">
-                            "Transformed my career from non-tech to Data Analyst in 6 months. Highly recommend the Data Science Bootcamp."
-                        </p>
-                    </div>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-sub">Have a question? Drop a message below and our team will get back to you.</p>
+        
+                <div class="contact-form-wrapper reveal">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn primary submit-btn">Send Message</button>
+                    </form>
+                    <div id="form-status" class="form-status"></div>
                 </div>
             </div>
         </section>
-
-        <section id="contact" class="section" style="padding-top: 50px; padding-bottom: 50px;">
-            <div class="container" style="text-align: center;">
-                <h2 class="section-title reveal">Ready to Launch Your Tech Career?</h2>
-                <a href="mailto:info@suscomgroup.com" class="cta-nav" style="margin-top: 20px;">Contact Now &rarr;</a>
-            </div>
-        </section>
-
     </main>
 
-    <!--Foother section -->
     <footer id="footer">
         <div class="container">
             <div class="footer-content">
@@ -186,8 +206,10 @@
                     <p style="margin-bottom: 15px;">Your launchpad to a high-tech career.</p>
                     <div class="footer-info">
                         <p>&#9993; info@suscomgroup.com</p>
-                        <p>&#9742; +1 (555) 123-4567</p>
-                        <p>&#128205; Bhopal, Madhya Pradesh, India</p>
+                        <p>&#9742; +91 123-456-7890</p>
+                        <p class="address">address</p>
+                        <a href="https://maps.app.goo.gl/QBfPfg895MHXu52v7" class="address">Bhopal, Madhya Pradesh, India</a>
+                        
                     </div>
                 </div>
 
@@ -197,7 +219,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">All Programs</a></li>
-                        <li><a href="#team">Success Stories</a></li>
+                        <li><a href="#team">Instructors</a></li>
                     </ul>
                 </div>
 
@@ -221,15 +243,15 @@
                     </ul>
                 </div>
             </div>
-
+            \U0001f4cd Bhopal, Madhya Pradesh, India
             <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Suscom Group Academy. All Rights Reserved. | Dedicated to Career Success</p>
+                <p>&copy; <span id="year"></span> Suscom Group Academy. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
     <button id="scroll-top" aria-label="Scroll to top">&uarr;</button>
 
+    <script src="scripts.js"></script>
 </body>
 </html>
-
