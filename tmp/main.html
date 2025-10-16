@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Suscom Group Academy - Courses and Internships</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>S</text></svg>">
-    <link rel="stylesheet" href="main_style.css" />
+    <link rel="stylesheet" href="course.css" />
     <script src="js.js"></script>
 
    
@@ -94,24 +94,32 @@
                 </div>
             </div>
         </section>
-
-        <section id="about" class="about section">
-            <div class="container about-grid">
-                <div class="about-media reveal-left">
-                    <img src="/imgaes/6.jpeg" alt="Students learning together" />
-                </div>
-                <div class="about-text reveal-right">
-                    <h2>About Suscom Group Academy</h2>
-                    <p>
-                        Suscom Group Academy provides job-focused training designed to bridge the gap between academic knowledge and industry demands. We focus on **hands-on projects** and building professional portfolios.
-                    </p>
-                    <p>
-                        Our core strength lies in securing **guaranteed internships** for successful graduates, giving them the essential experience needed to launch their high-tech careers.
-                    </p>
-                    <a class="btn outline" href="#contact">Get Syllabus</a>
-                </div>
+        <!--About section-->
+        <!--Courses section-->
+        <section class="courses-container" class="team section">
+            <div class="courses-header" class="section">
+                <h2 class="section-title reveal">Trending courses</h2>
+            </div>
+    
+            <div class="carousel-wrapper">
+                <!-- Left Arrow -->
+                <button id="arrow-left" class="carousel-arrow arrow-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>                  
+                </button>
+    
+                <!-- Course cards will be injected here by JavaScript -->
+                <div id="courses-grid" class="courses-grid"></div>
+    
+                 <button id="arrow-right" class="carousel-arrow arrow-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>                
+                </button>
             </div>
         </section>
+    
         <!--Team sections-->
         <section id="team" class="team section">
             <div class="container">
@@ -156,17 +164,60 @@
                 </div>
             </div>
         </section>
-
-        <section id="contact" class="section" style="padding-top: 50px; padding-bottom: 50px;">
-            <div class="container" style="text-align: center;">
-                <h2 class="section-title reveal">Ready to Launch Your Tech Career?</h2>
-                <a href="mailto:info@suscomgroup.com" class="cta-nav" style="margin-top: 20px;">Contact Now &rarr;</a>
+        
+    </main>
+    <!--Mission and vision section-->
+    <section id="mission-vision" class="mv-section" aria-labelledby="mv-heading">
+        <div class="container">
+          <h2 id="mv-heading" class="mv-title">Our Mission & Vision</h2>
+      
+          <div class="divider" aria-hidden="true"></div>
+      
+          <div class="mv-cards">
+            <article class="card">
+              <h3 class="card-title">Mission</h3>
+              <p class="card-text">
+                To equip students and early-career professionals with industry-ready technical skills through hands-on training, real internships, and mentorship.
+              </p>
+            </article>
+      
+            <article class="card">
+              <h3 class="card-title">Vision</h3>
+              <p class="card-text">
+                To become the leading gateway between talent and opportunity — producing confident, job-ready engineers who innovate and contribute to the tech ecosystem.
+              </p>
+            </article>
+          </div>
+          
+          <p class="tagline">Learn. Build. Get Hired.</p>
+        </div>
+      </section>
+      
+      <section id="about" class="about section">
+          <div class="container about-grid">
+              <div class="about-media reveal-left">
+                  <img src="/imgaes/6.jpeg" alt="Students learning together" />
+              </div>
+              <div class="about-text reveal-right">
+                  <h2>About Suscom Group Academy</h2>
+                  <p>
+                      Suscom Group Academy provides job-focused training designed to bridge the gap between academic knowledge and industry demands. We focus on **hands-on projects** and building professional portfolios.
+                    </p>
+                    <p>
+                        Our core strength lies in securing **guaranteed internships** for successful graduates, giving them the essential experience needed to launch their high-tech careers.
+                    </p>
+                    <a class="btn outline" href="#contact">Get Syllabus</a>
+                </div>
             </div>
         </section>
-
-    </main>
-
-    <!--Foother section -->
+    <!--Contact section-->
+    <section id="contact" class="section" style="padding-top: 50px; padding-bottom: 50px;">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title reveal">Ready to Launch Your Tech Career?</h2>
+            <a href="mailto:info@suscomgroup.com" class="cta-nav" style="margin-top: 20px;">Contact Now &rarr;</a>
+        </div>
+    </section>
+        <!--Foother section -->
     <footer id="footer">
         <div class="container">
             <div class="footer-content">

@@ -14,6 +14,7 @@ at the time of 3:00 AM i have developed about section of suscom academy. now i w
 # Today date is 11/10/25
 i have developed a header part and about section now i working on the home page layout and also try to structure that content and adding more images 
 i'm thinking abour making to do list for the today's task ✅
+
  1. making header development part more interactive ✅
  2.enhance the about section and and content \✅
 
@@ -34,3 +35,9 @@ i'm thinking abour making to do list for the today's task ✅
  3.service section ✅
  4.Team section ✅
  5.All the changes push to the github ✅
+
+
+ # Today date is 15/10/25
+ Today i have developed a course section with animation 
+ 1.course section✅ 
+ 2.add a mission and vision section ✅

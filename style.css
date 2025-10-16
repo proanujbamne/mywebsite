@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 :root {
-    --bg-dark: #0A0F1C;
+    --bg-dark: #0f1114;
     --bg-dark-light: #131b2d;
     --accent-green: #21c55d;
     --accent-pink: #ff4081;
@@ -166,7 +166,7 @@ body::before {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 24px;
+    gap: 18px;
     align-items: center;
 }
 
@@ -746,24 +746,22 @@ body::before {
 
 
 /* ============================
-   Courses Section (AUTOMATIC Carousel)
+   Courses Section (IMPROVED)
    ============================ */
-.courses-section-wrapper {
-    padding-top: 100px;
-    padding-bottom: 60px;
+.courses-section-wrapper .section-title {
+    margin-bottom: 12px;
 }
 
-/* The keyframe animation - CORRECTED for seamless loop */
+.courses-section-wrapper .section-sub {
+    margin-bottom: 60px;
+}
+
+
 @keyframes auto-scroll {
     from {
         transform: translateX(0);
     }
     to {
-        /* This is the key fix. We translate the element by -50% of its OWN width.
-           Since the JS duplicates the cards, the element's total width is 2x the original content.
-           Moving it by -50% gets us to the start of the second (cloned) set. When the animation
-           instantly resets to 0%, the loop is perfectly seamless.
-        */
         transform: translateX(-50%);
     }
 }
@@ -771,8 +769,7 @@ body::before {
 
 .carousel-wrapper {
     position: relative;
-    overflow: hidden; /* This is essential to clip the overflowing content */
-    /* Optional: Add fading edges for a cleaner look */
+    overflow: hidden;
     -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
     mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
 }
@@ -781,13 +778,9 @@ body::before {
     display: flex;
     gap: 1.5rem;
     padding-bottom: 1.5rem; 
-    /* The width is no longer fixed, allowing flexbox to calculate it naturally based on content. */
-    /* This makes the -50% transform reliable. */
-    animation: auto-scroll 50s linear infinite;
+    animation: auto-scroll 45s linear infinite;
 }
 
-
-/* Pause animation on hover */
 .carousel-wrapper:hover .courses-grid {
     animation-play-state: paused;
 }
@@ -802,11 +795,12 @@ body::before {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: box-shadow 0.3s var(--ease), border-color 0.3s var(--ease);
+    transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.3s var(--ease);
 }
 
 .course-card:hover {
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(33, 197, 93, 0.3);
     border-color: rgba(33, 197, 93, 0.4);
 }
 
@@ -886,7 +880,6 @@ body::before {
     color: var(--bg-dark);
 }
 
-/* Hide the carousel arrows as they are no longer needed */
 .carousel-arrow {
     display: none;
 }

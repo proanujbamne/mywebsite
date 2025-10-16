@@ -279,4 +279,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
   });
-  
+
+  // Filter logic
+const filterButtons = document.querySelectorAll('.filter-btn');
+const courseCards = document.querySelectorAll('.course-card');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelector('.filter-btn.active').classList.remove('active');
+    button.classList.add('active');
+    const category = button.dataset.category;
+
+    courseCards.forEach(card => {
+      if (category === 'all' || card.dataset.category === category) {
+        card.style.display = 'block';
+        setTimeout(() => card.classList.remove('fade-out'), 100);
+      } else {
+        card.classList.add('fade-out');
+        setTimeout(() => (card.style.display = 'none'), 300);
+      }
+    });
+  });
+});
+
+// Smooth fade effect
+const style = document.createElement('style');
+style.innerHTML = `
+.fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.3s ease;
+}`;
+document.head.appendChild(style);
