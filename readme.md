@@ -48,3 +48,20 @@ Today i have worked on the contact form and the course section
  2.add a filter to the course section ✅
  3.Map location integrated to the footer section✅
  4.all the changes commited to the github✅
+
+ # DATE 17/10/25
+ I absent that day 
+
+ # Date 18/10/25
+ The main page means the meain landing page of the suscom academy is done , now we have to make the individual pages like about page , course and internships and contact page
+ 
+ 1. About page 
+ 2.programs page
+ 3.course page
+ 4.contact page with form and try to use js to collect that data 
+ 
+
+ # DATE is 20/10/25
+  Today i have complete all the pages like programes page and course page and connect all the page together.
+
+  

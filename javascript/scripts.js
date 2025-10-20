@@ -245,3 +245,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+// contact form
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    // Prevent the default form submission
+    event.preventDefault();
+
+    // Get the form status element
+    const status = document.getElementById('form-status');
+    
+    // Simulate a form submission
+    // In a real application, this is where you would send data to a server.
+    status.innerHTML = "Sending...";
+    status.style.color = "blue";
+
+    // Simulate a successful response after 2 seconds
+    setTimeout(() => {
+        status.innerHTML = "Message sent successfully!";
+        status.style.color = "green";
+        
+        // Clear the form
+        document.getElementById('contact-form').reset();
+    }, 2000);
+});
