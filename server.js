@@ -15,15 +15,22 @@ app.use(express.urlencoded({ extended: true }));
 // This tells Express to make files in the root directory accessible
 app.use(express.static(path.join(__dirname)));
 // Serve CSS files from the CSS directory
-app.use('/CSS', express.static(path.join(__dirname, 'CSS')));
+app.use('/CSS', express.static(path.join(__dirname, "/CSS")));
+app.use(express.static(path.join(__dirname, "public")));
 // Serve JS files from the javascript directory
-app.use('/javascript', express.static(path.join(__dirname, 'javascript')));
+app.use('/javascript', express.static(path.join(__dirname, "public/javascript")));
 // Serve image files
 app.use('/imgaes', express.static(path.join(__dirname, 'imgaes')));
 
 
 // Define the path to your data storage file
 const dataFilePath = path.join(__dirname, 'data.json');
+
+// route to serve the main HTML file
+app.get("/",(req,res)=>{
+
+    res.sendFile(path.join(__dirname, "public/index.html"));
+});
 
 // POST endpoint to handle form submissions
 app.post('/submit-form', (req, res) => {
