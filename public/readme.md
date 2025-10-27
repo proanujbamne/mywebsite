@@ -1,6 +1,11 @@
+# In case you want to use backend for this site , you can simply do one thing which move the server.js from backend folder to main folder and then run the development server it works very well, it's a simple backend where any user ask any query,that query saved as javascript object in the data.json file
+
+
+
+
 so this file contain all the required step that leads to make Suscom Academy 
 and also contain updates of every day , what part of project i am worked on which section i have developed and which section is pending 
-so today my task is to find the best structure for the website and how it looks like.also finding the best ux and ui for the website and also researching about the website 
+so today my task is to find the best structure for the website and how it looks like.also finding the best ux and ui for the website and also researcing about the website 
 
 Today date is 09/10/25
 i have some certain tasks about the main site 
